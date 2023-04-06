@@ -48,6 +48,11 @@ public class Time {
 		return hour == other.hour && minute == other.minute;
 	}
 
+	public Time getTime() {
+		return new Time(hour, minute); 
+		
+	}
+	
 	public static void main(String[] args) {
  
 		Time time1 = new Time(2, 23);

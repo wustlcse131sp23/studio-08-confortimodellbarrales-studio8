@@ -54,6 +54,12 @@ public class Date {
 		return day == other.day && month == other.month && year == other.year;
 	}
 
+	
+	public Date getDate() {
+		return new Date(month, day, year, isHoliday); 
+		
+	}
+	
 	public static void main(String[] args) {
 
     	Date Date1 = new Date(4,6,2002, false);
